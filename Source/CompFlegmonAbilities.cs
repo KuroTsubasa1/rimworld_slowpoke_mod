@@ -48,8 +48,8 @@ namespace FlegmonCreature
             // Check if map needs rain (low rainfall or plants dying)
             GameConditionManager gameConditionManager = pawn.Map.gameConditionManager;
             
-            // Check for drought-like conditions
-            if (gameConditionManager.ConditionIsActive(GameConditionDefOf.Drought))
+            // Check for hot weather conditions as drought alternative
+            if (pawn.Map.mapTemperature.OutdoorTemp > 35f)
                 return true;
                 
             // Check if many plants are dying from lack of water
@@ -74,7 +74,7 @@ namespace FlegmonCreature
             for (int i = 0; i < 5; i++)
             {
                 Vector3 pos = pawn.DrawPos + new Vector3(Rand.Range(-1f, 1f), 0, Rand.Range(-1f, 1f));
-                MoteMaker.MakeStaticMote(pos, pawn.Map, ThingDefOf.Mote_AirPuff);
+                MoteMaker.MakeStaticMote(pos, pawn.Map, null);
             }
 
             // Increase rain chance
@@ -86,12 +86,12 @@ namespace FlegmonCreature
                 {
                     pawn.Map.weatherManager.TransitionTo(rainWeather);
                     Messages.Message("MessageFlegmonRainDanceSuccess".Translate(pawn.Named("PAWN")), 
-                        pawn, MessageTypeDefOf.PositiveEvent);
+                        new TargetInfo(pawn.Position, pawn.Map, false), MessageTypeDefOf.PositiveEvent);
                 }
                 else
                 {
                     Messages.Message("MessageFlegmonRainDanceFailed".Translate(pawn.Named("PAWN")), 
-                        pawn, MessageTypeDefOf.NeutralEvent);
+                        new TargetInfo(pawn.Position, pawn.Map, false), MessageTypeDefOf.NeutralEvent);
                 }
             }
 
@@ -105,7 +105,7 @@ namespace FlegmonCreature
             GenSpawn.Spawn(slimeTrail, pawn.Position, pawn.Map);
             
             // Apply to adjacent cells
-            foreach (IntVec3 cell in GenAdj.CellsAdjacent8Way(pawn.Position))
+            foreach (IntVec3 cell in GenAdj.CellsAdjacent8Way(new TargetInfo(pawn.Position, pawn.Map)))
             {
                 if (cell.InBounds(pawn.Map) && Rand.Chance(0.6f))
                 {
@@ -119,7 +119,7 @@ namespace FlegmonCreature
             if (PawnUtility.ShouldSendNotificationAbout(pawn))
             {
                 Messages.Message("MessageFlegmonLeftSlimeTrail".Translate(pawn.Named("PAWN")), 
-                    pawn, MessageTypeDefOf.NeutralEvent);
+                    new TargetInfo(pawn.Position, pawn.Map, false), MessageTypeDefOf.NeutralEvent);
             }
         }
 

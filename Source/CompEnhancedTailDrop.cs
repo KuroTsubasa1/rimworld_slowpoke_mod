@@ -1,6 +1,7 @@
 using RimWorld;
 using Verse;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace FlegmonCreature
 {
@@ -110,13 +111,22 @@ namespace FlegmonCreature
 
         public override string CompInspectStringExtra()
         {
-            string stageText = currentTailStage switch
+            string stageText;
+            switch (currentTailStage)
             {
-                TailStage.Stub => "TailStageStub".Translate(),
-                TailStage.Growing => "TailStageGrowing".Translate(),
-                TailStage.Full => "TailStageFull".Translate(),
-                _ => "Unknown"
-            };
+                case TailStage.Stub:
+                    stageText = "TailStageStub".Translate();
+                    break;
+                case TailStage.Growing:
+                    stageText = "TailStageGrowing".Translate();
+                    break;
+                case TailStage.Full:
+                    stageText = "TailStageFull".Translate();
+                    break;
+                default:
+                    stageText = "Unknown";
+                    break;
+            }
             
             return "TailStatus".Translate(stageText);
         }

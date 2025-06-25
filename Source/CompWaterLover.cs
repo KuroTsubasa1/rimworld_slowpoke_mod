@@ -3,6 +3,7 @@ using Verse;
 using Verse.AI;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 namespace FlegmonCreature
 {
