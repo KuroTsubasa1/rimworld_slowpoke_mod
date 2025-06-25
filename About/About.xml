@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Flegmon Creature</name>
+  <author>YourName</author>
+  <packageId>YourName.FlegmonCreature</packageId>
+  <supportedVersions>
+    <li>1.4</li>
+    <li>1.5</li>
+  </supportedVersions>
+  <description>Adds the Flegmon, a mysterious new creature to RimWorld.
+
+The Flegmon is a unique animal that roams the wilderness, providing both challenges and opportunities for your colonists.</description>
+</ModMetaData>

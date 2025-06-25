@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>FlegmonTailRegrowth</defName>
+    <label>tail regrowth</label>
+    <description>The flegmon's tail is regenerating and will soon produce edible meat.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>300000</disappearsAfterTicks> <!-- ~5 days -->
+      </li>
+    </comps>
+  </HediffDef>
+</Defs>

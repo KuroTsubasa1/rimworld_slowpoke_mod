@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Flegmon Wool -->
+  <ThingDef ParentName="WoolBase">
+    <defName>WoolFlegmon</defName>
+    <label>flegmon wool</label>
+    <description>Soft, pink-tinged wool sheared from a tame flegmon. It has a unique shimmer and is surprisingly water-resistant.</description>
+    <graphicData>
+      <color>(255,192,203)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.5</MarketValue>
+      <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>16</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(255,192,203)</color>
+    </stuffProps>
+  </ThingDef>
+
+  <!-- Flegmon Schwanz (Tail Meat) -->
+  <ThingDef ParentName="MeatRawBase">
+    <defName>Meat_FlegmonSchwanz</defName>
+    <label>flegmon schwanz</label>
+    <description>The nutritious tail meat periodically shed by flegmons. It regenerates quickly and is considered a delicacy. The meat has a unique pink color and slightly sweet taste.</description>
+    <graphicData>
+      <color>(255,182,193)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.0</MarketValue>
+      <Nutrition>0.08</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <tasteThought>AteRawMeat</tasteThought>
+      <specialThoughtAsIngredient>AteFineMeal</specialThoughtAsIngredient>
+    </ingestible>
+  </ThingDef>
+</Defs>
