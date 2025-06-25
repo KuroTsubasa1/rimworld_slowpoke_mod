@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Water-related Hediffs -->
+  <HediffDef>
+    <defName>FlegmonWet</defName>
+    <label>wet</label>
+    <description>This Flegmon recently enjoyed a refreshing bath.</description>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.5, 0.7, 1.0)</defaultLabelColor>
+    <stages>
+      <li>
+        <statOffsets>
+          <MoveSpeed>0.15</MoveSpeed>
+          <ComfyTemperatureMax>5</ComfyTemperatureMax>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FlegmonNeedsBath</defName>
+    <label>needs bath</label>
+    <description>This Flegmon hasn't bathed in a while and feels uncomfortable.</description>
+    <isBad>true</isBad>
+    <defaultLabelColor>(0.8, 0.6, 0.4)</defaultLabelColor>
+    <stages>
+      <li>
+        <statOffsets>
+          <MoveSpeed>-0.1</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!-- Tail-related Hediffs -->
+  <HediffDef>
+    <defName>FlegmonTailStub</defName>
+    <label>tail stub</label>
+    <description>This Flegmon's tail was recently dropped and is beginning to regrow.</description>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.8, 0.4, 0.4)</defaultLabelColor>
+    <stages>
+      <li>
+        <label>stub</label>
+        <becomeVisible>true</becomeVisible>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FlegmonTailGrowing</defName>
+    <label>growing tail</label>
+    <description>This Flegmon's tail is actively regrowing.</description>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.6, 0.8, 0.4)</defaultLabelColor>
+    <stages>
+      <li>
+        <label>growing</label>
+        <becomeVisible>true</becomeVisible>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FlegmonTailFull</defName>
+    <label>full tail</label>
+    <description>This Flegmon has a fully grown, healthy tail.</description>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.4, 0.8, 0.4)</defaultLabelColor>
+    <stages>
+      <li>
+        <label>full</label>
+        <becomeVisible>true</becomeVisible>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

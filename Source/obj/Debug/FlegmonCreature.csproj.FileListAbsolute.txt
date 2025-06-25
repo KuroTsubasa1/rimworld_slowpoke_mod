@@ -1,0 +1,8 @@
+C:\Users\lasse\PhpstormProjects\rimworld_slowpoke_mod\Source\obj\Debug\FlegmonCreature.csproj.AssemblyReference.cache
+C:\Users\lasse\PhpstormProjects\rimworld_slowpoke_mod\Source\obj\Debug\FlegmonCreature.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lasse\PhpstormProjects\rimworld_slowpoke_mod\Source\obj\Debug\FlegmonCreature.csproj.CoreCompileInputs.cache
+C:\Users\lasse\PhpstormProjects\rimworld_slowpoke_mod\Source\obj\Debug\FlegmonCreature.sourcelink.json
+C:\Users\lasse\PhpstormProjects\rimworld_slowpoke_mod\Assemblies\FlegmonCreature.dll
+C:\Users\lasse\PhpstormProjects\rimworld_slowpoke_mod\Assemblies\FlegmonCreature.pdb
+C:\Users\lasse\PhpstormProjects\rimworld_slowpoke_mod\Source\obj\Debug\FlegmonCreature.dll
+C:\Users\lasse\PhpstormProjects\rimworld_slowpoke_mod\Source\obj\Debug\FlegmonCreature.pdb

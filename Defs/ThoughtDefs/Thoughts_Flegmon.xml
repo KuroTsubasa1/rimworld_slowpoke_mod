@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Mood therapy thought -->
+  <ThoughtDef>
+    <defName>FlegmonMoodTherapy</defName>
+    <durationDays>0.5</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>Flegmon presence</label>
+        <description>Being near a Flegmon is oddly calming.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Cuddled by Flegmon thought -->
+  <ThoughtDef>
+    <defName>CuddledByFlegmon</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>cuddled by Flegmon</label>
+        <description>A Flegmon gave me a warm, comforting cuddle. So sweet!</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

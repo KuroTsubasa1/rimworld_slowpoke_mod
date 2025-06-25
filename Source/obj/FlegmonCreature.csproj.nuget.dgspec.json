@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\lasse\\PhpstormProjects\\rimworld_slowpoke_mod\\Source\\FlegmonCreature.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\lasse\\PhpstormProjects\\rimworld_slowpoke_mod\\Source\\FlegmonCreature.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lasse\\PhpstormProjects\\rimworld_slowpoke_mod\\Source\\FlegmonCreature.csproj",
+        "projectName": "FlegmonCreature",
+        "projectPath": "C:\\Users\\lasse\\PhpstormProjects\\rimworld_slowpoke_mod\\Source\\FlegmonCreature.csproj",
+        "packagesPath": "C:\\Users\\lasse\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lasse\\PhpstormProjects\\rimworld_slowpoke_mod\\Source\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lasse\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

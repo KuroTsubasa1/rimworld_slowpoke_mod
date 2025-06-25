@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Water-related messages -->
+  <MessageFlegmonWentToBathe>{PAWN_nameDef} went to take a refreshing bath.</MessageFlegmonWentToBathe>
+  <MessageFlegmonNeedsBath>{PAWN_nameDef} needs a bath and is feeling uncomfortable.</MessageFlegmonNeedsBath>
+  <MessageFlegmonDetectedWater>{PAWN_nameDef} detected {COUNT} new water sources nearby!</MessageFlegmonDetectedWater>
+  
+  <!-- Tail-related messages -->
+  <MessageFlegmonDroppedPremiumTail>{PAWN_nameDef} dropped a premium quality tail!</MessageFlegmonDroppedPremiumTail>
+  <MessageFlegmonTailGrowing>{PAWN_nameDef}'s tail is growing back.</MessageFlegmonTailGrowing>
+  <MessageFlegmonTailFullyGrown>{PAWN_nameDef}'s tail has fully regrown!</MessageFlegmonTailFullyGrown>
+  
+  <!-- Ability messages -->
+  <MessageFlegmonRainDanceSuccess>{PAWN_nameDef} performed a rain dance! The skies respond...</MessageFlegmonRainDanceSuccess>
+  <MessageFlegmonRainDanceFailed>{PAWN_nameDef} performed a rain dance, but the skies remain unchanged.</MessageFlegmonRainDanceFailed>
+  <MessageFlegmonLeftSlimeTrail>{PAWN_nameDef} left a slippery slime trail.</MessageFlegmonLeftSlimeTrail>
+  
+  <!-- Ability labels and descriptions -->
+  <AbilityRainDance>Rain Dance</AbilityRainDance>
+  <AbilityRainDanceDesc>Perform a mystical dance to summon rain. Has a chance to change the weather to rain.</AbilityRainDanceDesc>
+  <AbilitySlimeTrail>Slime Trail</AbilitySlimeTrail>
+  <AbilitySlimeTrailDesc>Leave a slippery trail of slime that slows down enemies.</AbilitySlimeTrailDesc>
+  <AbilityCooldown>Cooldown: {0} hours</AbilityCooldown>
+  
+  <!-- Inspection strings -->
+  <WaterSourcesKnown>Known water sources: {0}</WaterSourcesKnown>
+</LanguageData>

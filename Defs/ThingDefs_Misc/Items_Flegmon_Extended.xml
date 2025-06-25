@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Flegmon Premium Tail Meat -->
+  <ThingDef ParentName="MeatRawBase">
+    <defName>FlegmonSchwanzPremium</defName>
+    <label>Flegmon Schwanz Premium</label>
+    <description>Premium tail meat from a Flegmon. This rare delicacy is more nutritious and flavorful than regular Flegmon tail meat.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(255, 180, 200)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.5</MarketValue>
+      <Nutrition>0.07</Nutrition>
+      <Mass>0.025</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <tasteThought>AteRawFood</tasteThought>
+      <specialThoughtAsIngredient>AteExoticMeat</specialThoughtAsIngredient>
+    </ingestible>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+  </ThingDef>
+
+  <!-- Slime Trail -->
+  <ThingDef>
+    <defName>FlegmonSlimeTrail</defName>
+    <label>slime trail</label>
+    <thingClass>Thing</thingClass>
+    <category>Filth</category>
+    <useHitPoints>false</useHitPoints>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(255, 192, 203)</color>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <statBases>
+      <Beauty>-5</Beauty>
+      <Cleanliness>-5</Cleanliness>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>10</pathCost>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <filth>
+      <disappearsInDays>1.5</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+    </filth>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+  </ThingDef>
+</Defs>

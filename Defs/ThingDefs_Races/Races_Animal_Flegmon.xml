@@ -17,6 +17,11 @@
         <woolAmount>30</woolAmount>
       </li>
       <li Class="FlegmonCreature.CompProperties_FlegmonTailDrop" />
+      <li Class="FlegmonCreature.CompProperties_WaterLover" />
+      <li Class="FlegmonCreature.CompProperties_EnhancedTailDrop" />
+      <li Class="FlegmonCreature.CompProperties_FlegmonSocial" />
+      <li Class="FlegmonCreature.CompProperties_FlegmonAbilities" />
+      <li Class="FlegmonCreature.CompProperties_WaterDetection" />
     </comps>
     <race>
       <body>QuadrupedAnimalWithPaws</body>
